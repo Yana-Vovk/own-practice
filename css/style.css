@@ -1,0 +1,92 @@
+/* Сброс свойств */
+/* Делаем картинки блочными */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Типография */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Убрать подчёркивания у ссылок */
+.link {
+  text-decoration: none;
+}
+
+/* Убрать маркировку списков */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Невидимый контент */
+.invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* font-family: 'Open Sans', sans-serif; */
+/* Подключение шрифта */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/raleway/raleway-v18-latin_cyrillic-700.eot');
+  src: local(''),
+    url('../fonts/raleway/raleway-v18-latin_cyrillic-700.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/raleway/raleway-v18-latin_cyrillic-700.woff2') format('woff2'),
+    url('../fonts/raleway/raleway-v18-latin_cyrillic-700.woff') format('woff'),
+    url('../fonts/raleway/raleway-v18-latin_cyrillic-700.ttf')
+      format('truetype'),
+    url('../fonts/raleway/raleway-v18-latin_cyrillic-700.svg#Raleway')
+      format('svg');
+}
+
+/* Задаём цвета */
+:root {
+  --main-color: #555555;
+  --secondary-color: #303030;
+  --dark-theme-color: #ffffff;
+  --pale-dark-theme-color: #9da4bd;
+  --accent-color: #ff6c00;
+  --light-bkg: #f7f7f7;
+  --dark-bkg: #191c26;
+}
+
+/* Основные стили для боди */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+.header-hero {
+  background-color: var(--dark-bkg);
+  color: var(--dark-theme-color);
+}
+
+.navigation {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
