@@ -15,6 +15,9 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  font-family: Raleway;
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
 /* Убрать подчёркивания у ссылок */
@@ -79,14 +82,162 @@ body {
   color: var(--main-color);
 }
 
-.header-hero {
+/* Тёмные стили шапки + герой */
+.header,
+.hero,
+.prices,
+.contacts {
   background-color: var(--dark-bkg);
   color: var(--dark-theme-color);
 }
 
+/* Стиль для пред заголовка */
+.pre-heading,
+.fill-in-space,
+.footer-info,
+.back-link,
+.next-link,
+.extra-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+/* Стили навигации в шапке */
 .navigation {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
+}
+
+.navigation a {
+  color: var(--dark-theme-color);
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  color: var(--accent-color);
+}
+
+/* Стиль для кнопок */
+button {
+  min-width: 160px;
+  min-height: 40px;
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  color: var(--dark-theme-color);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+button:hover,
+button:focus {
+  color: var(--accent-color);
+}
+
+/* Индивидуальные стили героя */
+.hero .pre-heading,
+.prices .pre-heading {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero h1 {
+  font-size: 72px;
+  line-height: 1.18;
+}
+.text-info {
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.hero .text-info {
+  color: var(--pale-dark-theme-color);
+}
+
+.back-link {
+  color: rgba(157, 164, 189, 0.6);
+  text-transform: none;
+}
+
+.next-link {
+  color: var(--dark-theme-color);
+  text-transform: none;
+}
+
+/* Индивидуальные стили для сайдбара */
+.sidebar .extra-link {
+  letter-spacing: 0.2em;
+  text-transform: none;
+}
+
+.sidebar .extra-link:hover,
+.sidebar .extra-link:focus {
+  color: var(--accent-color);
+}
+
+/* Индивидуальные стили для заголовков */
+.about-us h2,
+.statistics h2,
+.prices h2,
+.employee h2,
+.contacts h2 {
+  font-size: 42px;
+  line-height: 1.17;
+  color: var(--secondary-color);
+}
+
+.prices h2,
+.contacts h2 {
+  color: var(--dark-theme-color);
+}
+
+/* Индивидуальные стили секций */
+.about-us button {
+  color: var(--secondary-color);
+}
+
+.about-us button:hover,
+.about-us button:focus {
+  color: var(--accent-color);
+}
+
+.prices li {
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--pale-dark-theme-color);
+}
+
+.plus {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+}
+
+.quantity {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+  color: var(--secondary-color);
+}
+
+/* Индивидуальные стили для футера */
+.footer-info {
+  letter-spacing: 0.2em;
+}
+
+.copyright {
+  color: var(--pale-dark-theme-color);
 }
