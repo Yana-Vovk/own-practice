@@ -233,9 +233,67 @@ button:focus {
   color: var(--secondary-color);
 }
 
+.quantity ~ p {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--secondary-color);
+}
+
+.statistics li {
+  background-color: var(--light-bkg);
+}
+
+.names {
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.position {
+  line-height: 1.36;
+  color: var(--accent-color);
+}
+
+.employee {
+  background-color: var(--light-bkg);
+}
+
+/* Индивидуальные стили для контактов */
+.fill-in-space {
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.fill-in-space:hover,
+.fill-in-space:focus {
+  color: var(--dark-theme-color);
+}
+
+.mild-color {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--pale-dark-theme-color);
+}
+
+.mild-color[href='mailto:barbershop@email.com'] {
+  text-decoration-line: underline;
+}
+
+.contacts .pre-heading {
+  color: var(--dark-theme-color);
+}
+
 /* Индивидуальные стили для футера */
+.footer {
+  background-color: var(--light-bkg);
+}
+
 .footer-info {
   letter-spacing: 0.2em;
+  text-transform: none;
 }
 
 .copyright {
